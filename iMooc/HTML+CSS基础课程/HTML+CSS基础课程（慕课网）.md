@@ -26,6 +26,7 @@
 - HTML（Hyper Text Markup Language）是网页内容的载体
 - CSS（Cascading Style Sheets）样式是表现
 - JavaScript脚本语言是用来实现网页上的特效效果
+
 ##### 1-3 认识HTML标签
 
 网页中每一个内容在浏览器中的显示，都要存放到各种标签中。例如：`<h1>标题标签</h1>`
@@ -55,11 +56,19 @@
 ```html
 <head>
   	<!--注释：title标签会显示在浏览器标题栏 -->
-    <title>...</title>
+    <title>title</title>
     <meta>
     <link>
-    <style>...</style>
-    <script>...</script>
+    <style type="text/css">
+      * {
+        margin: auto;
+      }
+    </style>
+    <script type="text/javascript">
+      function() {
+
+      }
+    </script>
 </head>
 ```
 
@@ -255,10 +264,8 @@ table标签：表示一个表格。
 ```html
 <!--整个表格以<table>标记开始、</table>标记结束。-->
 <table>
-  <!--
-	--当表格内容非常多时，表格会下载一点显示一点。
-	--但如果加上<tbody>标签后，这个表格就要等表格内容全部下载完才会显示。
-	-->
+	<!--当表格内容非常多时，表格会下载一点显示一点。-->
+	<!--但如果加上<tbody>标签后，这个表格就要等表格内容全部下载完才会显示。-->
   <tbody>
     <!--<tr>表示表格的一行，所以有几对tr 表格就有几行。-->
     <tr>
